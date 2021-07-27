@@ -1,3 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
+}
+
+.home-area {
+  position: relative;
+}
+.home-banner {
+  height: 800px;
+  position: relative;
+}
+.home-banner .banner-content {
+  position: relative;
+  z-index: 9;
+}
+.home-banner .banner-content .banner-text {
+  color: rgb(211, 154, 154);
+}
+.home-banner .banner-content .banner-text span {
+  color: rgb(145, 32, 32);
+}
+.banner-image {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 55%;
+  height: 100%;
+}
+
+.bg-home {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 70%;
+}
+
+@media screen(max) {
 }
