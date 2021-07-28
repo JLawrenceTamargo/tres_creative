@@ -8,7 +8,12 @@
   padding-top: 100px;
 }
 body {
+  background-color: #1e1d1d;
   position: relative;
+}
+
+.bg-black {
+  background-color: #1e1d1d;
 }
 
 .bg-nav {
@@ -18,7 +23,7 @@ body {
 ul.navbar-nav li.active > a {
   color: #3e0b0b !important;
   background-color: #f9aeae;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .navbar-light .navbar-toggler {
@@ -27,7 +32,9 @@ ul.navbar-nav li.active > a {
 }
 
 .navbar-light .navbar-toggler-icon {
-  color: #f9aeae !important;
+  background-image: url(/image/toggler-icon.png);
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
 .nav-link {
@@ -59,10 +66,10 @@ a.nav-link:hover {
   z-index: 9;
 }
 .home-banner .banner-content .banner-text {
-  color: rgb(211, 154, 154);
+  color: #f9aeae;
 }
 .home-banner .banner-content .banner-text span {
-  color: rgb(145, 32, 32);
+  color: #3e0b0b;
 }
 .banner-image {
   position: absolute;
@@ -70,6 +77,23 @@ a.nav-link:hover {
   right: 0%;
   width: 55%;
   height: 100%;
+}
+.banner-content {
+  position: relative;
+  padding: 50px 0 50px 10px;
+}
+.banner-content::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: #f9aeae;
+  opacity: 50%;
+}
+.banner-text {
+  position: relative;
 }
 
 .bg-home {
@@ -84,11 +108,15 @@ a.nav-link:hover {
   .home-banner {
     height: 400px;
   }
+  .banner-content {
+    position: relative;
+    padding: 30px 0 30px 5px;
+  }
   .banner-image {
     position: absolute;
     top: 0;
     right: 0%;
-    width: 25%;
+    width: 65%;
     height: 100%;
   }
 }
