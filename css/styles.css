@@ -124,8 +124,30 @@ a.nav-link:hover {
   width: 100%;
 }
 
-.footer-contacts .li {
-  margin-top: 5px;
+.f-conticon img {
+  filter: invert(100%) sepia(100%) saturate(0) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.footer-contact {
+  position: relative;
+}
+.footer-contact::before {
+  content: " ";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: #3e0b0b;
+  opacity: 40%;
+}
+.cf-sub {
+  position: relative;
+}
+
+.contact-footer-ul .li {
+  padding: 1px;
 }
 
 .f-conticon,

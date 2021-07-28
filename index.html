@@ -355,14 +355,14 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="container p-5">
+    <div class="container-fluid footer-contact">
+      <div class="container cf-sub p-5">
         <div class="row">
           <div class="col-sm-8 col-md-4 col-lg-3">
             <a href="#" class="pt-4"
               ><img src="/image/tres_header.png" height="25" width="140" alt=""
             /></a>
-            <ul class="footer-contacts text-cream m-2 list-unstyled">
+            <ul class="contact-footer-ul text-cream m-2 list-unstyled">
               <li>
                 <div class="f-contdet d-flex">
                   <div class="f-conticon">
@@ -376,7 +376,11 @@
               <li>
                 <div class="f-contdet d-flex">
                   <div class="f-conticon">
-                    <img src="/image/envelope.svg" alt="envelope-icon" />
+                    <img
+                      src="/image/envelope.svg"
+                      class="change-color"
+                      alt="envelope-icon"
+                    />
                   </div>
                   <div class="f-conttxt">
                     <p>contact@email.com</p>
@@ -438,15 +442,28 @@
             <div class="foot-title">
               <h4 class="text-cream">Newsletter</h4>
             </div>
-            <ul class="list-unstyled text-cream">
-              <li>
-                <p>
-                  Subscribe to our newsletter for the latest news and service
-                  price updates.
-                </p>
-              </li>
-              <li></li>
-            </ul>
+            <p class="text-cream">
+              Subscribe to our newsletter for the latest news and service price
+              updates.
+            </p>
+            <form>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ex. e-mail@mail.com"
+                  aria-label="client-email"
+                  aria-describedby="reg-email"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="reg-email"
+                >
+                  <img src="/image/box-arrow-in-right.svg" alt="arrow-right" />
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
