@@ -21,6 +21,15 @@ ul.navbar-nav li.active > a {
   font-weight: 500;
 }
 
+.navbar-light .navbar-toggler {
+  color: #f9aeae !important;
+  border-color: #f9aeae !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  color: #f9aeae !important;
+}
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -36,7 +45,7 @@ a.nav-link:hover {
 }
 
 .text-cream {
-  color: #f9aeae;
+  color: #f9aeae !important;
 }
 .home-area {
   position: relative;
