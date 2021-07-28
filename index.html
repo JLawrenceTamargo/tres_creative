@@ -14,16 +14,19 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>3Creative Studio - Home</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
+  <body data-bs-spy="scroll" data-bs-target="#navbarscroll">
     <div class="container-fluid">
-      <div class="container">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container sticky-top">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-transparent"
+          id="navbarscroll"
+        >
           <div class="container-fluid">
             <a class="navbar-brand" href="#"
               ><img
                 src="image/tres_header.png"
                 class="d-inline-block align-text-top"
-                width="200"
+                width="175"
                 height="50"
                 alt="tres_logo"
             /></a>
@@ -65,45 +68,193 @@
             </div>
           </div>
         </nav>
-        <!--HOME-->
-        <div class="container bg-primary" id="home" style="height: 100vh">
-          <div class="row px-5">
-            <div class="col"></div>
-            <div class="col"></div>
+      </div>
+      <!--HOME-->
+      <header id="home" class="home-area bg-primary">
+        <div class="home-banner d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 col-lg-9 col-sm-10">
+                <div class="banner-content">
+                  <h1 class="banner-text">
+                    BRING YOUR <span>IDEA</span><br />
+                    INTO <span>REALITY</span> <br />
+                    WITH <span>YOUR TRUSTED</span> <br />
+                    <span>GRAPHICS DESIGN TEAM</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!--EOF HOME-->
-        <!--ABOUT US-->
-        <div class="container bg-success" id="about" style="height: 100vh">
-          <h4>About</h4>
-          <p>...</p>
-        </div>
-        <!--EOF ABOUT US-->
-        <!--SERVICES-->
-        <div class="container bg-warning" id="services" style="height: 100vh">
-          <h4>Services</h4>
-          <p>...</p>
-        </div>
-        <!--EOF SERVICES-->
-        <!--PROJECTS-->
-        <div class="container bg-primary" id="projects" style="height: 100vh">
-          <h4>Projects</h4>
-          <p>...</p>
-        </div>
-        <!--EOF PROJECTS-->
-        <!--OUR TEAM-->
-        <div class="container bg-success" id="team" style="height: 100vh">
-          <h4>Team</h4>
-          <p>...</p>
-        </div>
-        <!--EOF OUR TEAM-->
-        <!--CONTACT-->
-        <div class="container bg-warning" id="contacts" style="height: 100vh">
-          <h4>Contact</h4>
-          <p>...</p>
-        </div>
-        <!--EOF CONTACT-->
+        <div
+          class="banner-image bg-home"
+          style="
+            background-image: url(image/pexels-anthony-shkraba-4348401.jpg);
+          "
+        ></div>
+      </header>
+
+      <!--EOF HOME-->
+      <!--ABOUT US-->
+      <div class="container bg-success" id="about" style="height: 100vh">
+        <h4>About</h4>
+        <p>...</p>
       </div>
+      <!--EOF ABOUT US-->
+      <!--SERVICES-->
+      <div
+        class="container bg-warning pb-5 pt-5"
+        id="services"
+        style="height: auto"
+      >
+        <h3 class="pt-5 fw-bold">Services</h3>
+
+        <p>
+          TRES Creative Studio deliver web development and design services based
+          on the client needs, expectations, and the good web principles design.
+        </p>
+
+        <!--1ST ROW-->
+        <div class="row g-2 mb-3">
+          <!--1ST SERVICE OFFERED-->
+          <div class="col-md-9 col-lg-8 mx-lg-4 col-sm-6">
+            <div class="card bg-dark text-light">
+              <div class="card-body align-justify">
+                <h4 class="card-title mb-3">1. Great User-Experience</h4>
+                <p class="pb-5">
+                  We make sure that the website design is optimized for
+                  usability and easy to navigate.
+                </p>
+                <div class="mb-4"></div>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <!--EOF 1ST SERVICE OFFERED-->
+          <!--IMAGE 1-->
+          <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <img src="image/ux.png" class="img-thumbnail" />
+              </div>
+            </div>
+          </div>
+          <!--EOF IMAGE 1-->
+        </div>
+        <!--EOF 1ST ROW-->
+
+        <!--2ND ROW-->
+        <div class="row g-2 mb-3">
+          <!--2ND SERVICE OFFERED-->
+          <div class="col-md-9 col-lg-8 mx-lg-4 col-sm-6">
+            <div class="card bg-dark text-light">
+              <div class="card-body align-justify">
+                <h4 class="card-title mb-3">2. Simple and Elegant</h4>
+                <p class="pb-4">
+                  The team can design your website simple and elegant that can
+                  capture audience’s attention. We can suggest color palette
+                  that fits the client’s branding.
+                </p>
+                <div class="mb-4"></div>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <!--EOF 2ND SERVICE OFFERED-->
+          <!--IMAGE 2-->
+          <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <img src="image/simple.png" class="img-thumbnail" />
+              </div>
+            </div>
+          </div>
+          <!--EOF IMAGE 2-->
+        </div>
+        <!--EOF 2ND ROW-->
+
+        <!--3RD ROW-->
+        <div class="row g-2">
+          <!--3RD SERVICE OFFERED-->
+          <div class="col-md-9 col-lg-8 mx-lg-4 col-sm-6">
+            <div class="card bg-dark text-light">
+              <div class="card-body align-justify">
+                <h4 class="card-title mb-3">
+                  3. Intuitive and Consistent Navigation
+                </h4>
+                <p class="pb-4">
+                  It is important that we retained the visitors within the
+                  website, we can design your website navigation simple,
+                  intuitive and consistent all-throughout the sites.
+                </p>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <!--EOF 3RD SERVICE OFFERED-->
+
+          <!--IMAGE 3-->
+          <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <img src="image/navigation.png" class="img-thumbnail" />
+              </div>
+            </div>
+          </div>
+          <!--EOF IMAGE 3-->
+        </div>
+        <!--EOF 3RD ROW-->
+
+        <!--4TH SERVICE OFFERED-->
+        <div class="row g-2">
+          <div class="col-md-9 col-lg-8 mx-lg-4 col-sm-6">
+            <div class="card bg-dark text-light">
+              <div class="card-body align-justify">
+                <h4 class="card-title mb-3">4. Optimized Webpages</h4>
+                <p>
+                  Having an optimized pages is important especially nowadays
+                  many users utilize mobile phones. The team can design your
+                  website with short load time and mobile friendly.
+                </p>
+                <div class="mb-4"></div>
+                <hr />
+              </div>
+            </div>
+          </div>
+          <!--EOF 4TH SERVICE OFFERED-->
+
+          <!--IMAGE 4-->
+          <div class="col-md-3 col-lg-3 col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body text-center">
+                <img src="image/optimize.png" class="img-thumbnail" />
+              </div>
+            </div>
+          </div>
+          <!--EOF IMAGE 4-->
+        </div>
+        <!--EOF 4TH ROW-->
+      </div>
+      <!--EOF SERVICES-->
+      <!--PROJECTS-->
+      <div class="container bg-primary" id="projects" style="height: 100vh">
+        <h4>Projects</h4>
+        <p>...</p>
+      </div>
+      <!--EOF PROJECTS-->
+      <!--OUR TEAM-->
+      <div class="container bg-success" id="team" style="height: 100vh">
+        <h4>Team</h4>
+        <p>...</p>
+      </div>
+      <!--EOF OUR TEAM-->
+      <!--CONTACT-->
+      <div class="container bg-warning" id="contacts" style="height: 100vh">
+        <h4>Contact</h4>
+        <p>...</p>
+      </div>
+      <!--EOF CONTACT-->
     </div>
 
     <div class="container-fluid bg-primary mx-0">
