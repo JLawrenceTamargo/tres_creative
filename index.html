@@ -15,12 +15,9 @@
     <title>3Creative Studio - Home</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbarscroll">
-    <div class="container-fluid">
-      <div class="container sticky-top">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-transparent"
-          id="navbarscroll"
-        >
+    <div class="container-fluid sticky-top bg-nav">
+      <div class="container bg-nav">
+        <nav class="navbar navbar-expand-lg" id="navbarscroll">
           <div class="container-fluid">
             <a class="navbar-brand" href="#"
               ><img
@@ -42,10 +39,10 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
-              class="collapse navbar-collapse justify-content-end"
+              class="collapse navbar-collapse justify-content-end text-cream"
               id="navbarNav"
             >
-              <ul class="navbar-nav fw-bold">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -69,8 +66,10 @@
           </div>
         </nav>
       </div>
+    </div>
+    <div class="container-fluid">
       <!--HOME-->
-      <header id="home" class="home-area bg-primary">
+      <section id="home" class="home-area bg-primary pt-100">
         <div class="home-banner d-flex align-items-center">
           <div class="container">
             <div class="row">
@@ -93,18 +92,18 @@
             background-image: url(image/pexels-anthony-shkraba-4348401.jpg);
           "
         ></div>
-      </header>
+      </section>
 
       <!--EOF HOME-->
       <!--ABOUT US-->
-      <div class="container bg-success" id="about" style="height: 100vh">
+      <section class="container bg-success" id="about">
         <h4>About</h4>
         <p>...</p>
-      </div>
+      </section>
       <!--EOF ABOUT US-->
       <!--SERVICES-->
-      <div
-        class="container bg-warning pb-5 pt-5"
+      <section
+        class="container bg-warning pt-100 p-5"
         id="services"
         style="height: auto"
       >
@@ -235,25 +234,101 @@
           <!--EOF IMAGE 4-->
         </div>
         <!--EOF 4TH ROW-->
-      </div>
+      </section>
       <!--EOF SERVICES-->
       <!--PROJECTS-->
-      <div class="container bg-primary" id="projects" style="height: 100vh">
+      <section class="container bg-primary" id="projects" style="height: 100vh">
         <h4>Projects</h4>
         <p>...</p>
-      </div>
+      </section>
       <!--EOF PROJECTS-->
       <!--OUR TEAM-->
-      <div class="container bg-success" id="team" style="height: 100vh">
+      <section class="container bg-success" id="team">
         <h4>Team</h4>
         <p>...</p>
-      </div>
+      </section>
       <!--EOF OUR TEAM-->
       <!--CONTACT-->
-      <div class="container bg-warning" id="contacts" style="height: 100vh">
-        <h4>Contact</h4>
-        <p>...</p>
-      </div>
+      <section class="container bg-warning" id="contacts">
+        <div class="container text-center py-3">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h4>Contact Us</h4>
+              <h1>GET IN TOUCH</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form>
+                <div class="row my-2">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="kiminonawa" class="form-label"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="kiminonawa"
+                        placeholder="ex.FirstName M.I. LastName"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="emairu" class="form-label">Your Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emairu"
+                        placeholder="ex.name@example.com"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row my-2">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="ex.Logo Design Inquiry"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="pnumber" class="form-label">Phone</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="p-number"
+                        placeholder="ex.09991113333"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="mb-3">
+                      <label for="messagetext" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="messagetext"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--EOF CONTACT-->
     </div>
 
@@ -261,10 +336,34 @@
       <p class="text-center fw-bold">Copyright 2021 by Deeznuts.</p>
     </div>
     <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      window.addEventListener(`DOMContentLoaded`, () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute("id");
+            if (entry.intersectionRatio > 0) {
+              document
+                .querySelector(`nav li a[href="#${id}"]`)
+                .parentElement.classList.add("active");
+            } else {
+              document
+                .querySelector(`nav li a[href="#${id}"]`)
+                .parentElement.classList.remove("active");
+            }
+          });
+        });
+
+        // Track all sections that have an `id` applied
+        document.querySelectorAll("section[id]").forEach((section) => {
+          observer.observe(section);
+        });
+      });
+
+      src =
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js";
+      integrity =
+        "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM";
+      crossorigin = "anonymous";
+    </script>
   </body>
 </html>
