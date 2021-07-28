@@ -104,6 +104,40 @@ a.nav-link:hover {
   width: 70%;
 }
 
+.btn-submit {
+  font-weight: bold;
+  color: #3e0b0b;
+  background-color: #f9aeae;
+  box-shadow: 10px 10px 8px #3e0b0b;
+}
+
+.btn-submit:hover {
+  color: #f9aeae;
+  background-color: #3e0b0b;
+  box-shadow: 10px 10px 8px #f9aeae;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 700px;
+  width: 100%;
+}
+
+.footer-contacts .li {
+  margin-top: 5px;
+}
+
+.f-conticon,
+.f-conttxt {
+  padding: 5px;
+}
+
+.foot-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 420px) {
   .home-banner {
     height: 400px;
