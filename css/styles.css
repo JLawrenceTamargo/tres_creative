@@ -177,11 +177,6 @@ a.nav-link:hover {
   }
 }
 
-/*Project*/
-.card-fix {
-  height: 100%;
-}
-
 /* About */
 .about-image1 {
   display: flex;
