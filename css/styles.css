@@ -108,13 +108,13 @@ a.nav-link:hover {
   font-weight: bold;
   color: #3e0b0b;
   background-color: #f9aeae;
-  box-shadow: 10px 10px 8px #3e0b0b;
+  box-shadow: 5px 5px 4px #3e0b0b;
 }
 
 .btn-submit:hover {
   color: #f9aeae;
   background-color: #3e0b0b;
-  box-shadow: 10px 10px 8px #f9aeae;
+  box-shadow: 5px 5px 4px #f9aeae;
 }
 
 .gmap_canvas {
@@ -175,6 +175,37 @@ a.nav-link:hover {
     width: 65%;
     height: 100%;
   }
+}
+
+/* About */
+.about-image1 {
+  display: flex;
+  justify-content: right;
+  width: 55%;
+  height: 510px;
+  padding-left: 50px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.about-cont p {
+  font-size: 23px;
+  margin-top: 20px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.about-image2 {
+  display: flex;
+  justify-content: right;
+  width: -20px;
+  height: -30px;
 }
 
 @media screen and (max-width: 480px) {

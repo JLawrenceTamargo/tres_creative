@@ -12,6 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <!--for icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <title>3Creative Studio - Home</title>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbarscroll">
@@ -97,8 +102,57 @@
       <!--EOF HOME-->
       <!--ABOUT US-->
       <section class="container bg-black text-cream" id="about">
-        <h4>About</h4>
-        <p>...</p>
+        <div class="container">
+          <div class="header"><h1>ABOUT OUR TEAM</h1></div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="card-body">
+                <h1 class="card-title mb-50">TRES CREATIVE STUDIO</h1>
+                <p class="card-text">
+                  The TRES CREATIVE STUDIO works together to deliver an
+                  excellent design and produce works that is usable and
+                  user-friendly. We are the product of KodeGo Batch II under
+                  Full-Stack Development Training who work together toward a
+                  common goal. We are here to provide wide range of creative
+                  outputs that could satisfy the client needs.
+                </p>
+                <p>
+                  Our passion and creativity drive our design process. Combined
+                  with the unique experience and technical skills. We are
+                  constantly learning innovating and facing new challenges
+                  everyday that improves our skill and knowledge.
+                </p>
+                <div class="mt-60">
+                  <a href="#" class="btn btn-primary">LEARN MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col">
+                  <div class="card-body">
+                    <img
+                      src="/image/about-image1.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="card-body justify-self-end">
+                    <img
+                      src="/image/about-image2.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--EOF ABOUT US-->
       <!--SERVICES-->
@@ -237,9 +291,156 @@
       </section>
       <!--EOF SERVICES-->
       <!--PROJECTS-->
-      <section class="container bg-black" id="projects" style="height: 100vh">
-        <h4>Projects</h4>
-        <p>...</p>
+      <section
+        class="container bg-success pb-4"
+        id="projects"
+        style="height: auto"
+      >
+        <h4 class="lead pt-5 fw-bold">Projects</h4>
+
+        <section class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-6 col-sm-6">
+                <h3 class="mb-3">ONLINE MAGAZINE</h3>
+              </div>
+
+              <div class="col-md-6 col-lg-6 d-flex justify-content-end">
+                <!--LEFT BUTTON-->
+                <a
+                  class="btn btn-primary mb-3"
+                  href="#project-carousel"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <i class="bi bi-arrow-left-circle"></i>
+                </a>
+                <!--RIGHT BUTTON-->
+                <a
+                  class="btn btn-primary mb-3"
+                  href="#project-carousel"
+                  role="button"
+                  data-slide="next"
+                >
+                  <i class="bi bi-arrow-right-circle"></i>
+                </a>
+              </div>
+
+              <!--START OF CAROUSEL-->
+              <div class="col-md-12 col-lg-12 col-sm-6">
+                <div
+                  id="project-carousel"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <!--1st PAGE CAROUSEL-->
+                    <div class="carousel-item active">
+                      <!--ROW 1-->
+                      <div class="row">
+                        <!--IMAGE 1-->
+                        <div class="col-md-6 mb-3">
+                          <div class="card">
+                            <img
+                              class="img-fluid"
+                              alt="100%x280"
+                              src="image/online_mag1.png"
+                            />
+                            <div class="card-body">
+                              <h4 class="card-title">Mainpage</h4>
+                              <p class="card-text">
+                                This is the mainpage of the project. It contains
+                                the navigation, contents, and footer. It is also
+                                contains the logo and the tagline of the
+                                company.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!--EOF IMAGE 1-->
+
+                        <!--IMAGE 2-->
+                        <div class="col-md-6 mb-3">
+                          <div class="card">
+                            <img
+                              class="img-fluid"
+                              alt="100%x280"
+                              src="image/online_mag2.png"
+                            />
+                            <div class="card-body">
+                              <h4 class="card-title">Lifestyle Page</h4>
+                              <p class="card-text">
+                                Lifestyle page contains four (4) feature stories
+                                and has a READ MORE button that will display
+                                more info once clicked.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!--EOF IMAGE 2-->
+                      </div>
+                      <!--EOF ROW 1-->
+                    </div>
+                    <!--EOF 1st PAGE CAROUSEL-->
+
+                    <!--2nd PAGE CAROUSEL-->
+                    <div class="carousel-item">
+                      <!--ROW 1-->
+                      <div class="row">
+                        <!--IMAGE 4-->
+                        <div class="col-md-6 mb-3">
+                          <div class="card">
+                            <img
+                              class="img-fluid"
+                              alt="Business Page"
+                              src="image/online_mag3.png"
+                            />
+                            <h4 class="card-title">Business Page</h4>
+                            <p class="card-text">
+                              This page contains the business related articles.
+                              It has three columns and each column contains two
+                              rows of articles.
+                            </p>
+                          </div>
+                        </div>
+
+                        <!--EOF IMAGE 4-->
+
+                        <!--IMAGE 5-->
+                        <div class="col-md-6 mb-3">
+                          <div class="card">
+                            <img
+                              class="img-fluid"
+                              alt="Contact Us"
+                              src="image/online_mag4.png"
+                            />
+                            <div class="card-body">
+                              <h4 class="card-title">Contact Us Page</h4>
+                              <p class="card-text">
+                                The Contact Us page contains a form that enable
+                                the audience to drop a message. Social media
+                                links and office address via Google map.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!--EOF IMAGE 5-->
+                      </div>
+                      <!--EOF ROW 1-->
+                    </div>
+                    <!--EOF 2nd PAGE CAROUSEL-->
+                  </div>
+                  <!--EOF CAROUSEL INNER-->
+                </div>
+              </div>
+              <!--EOF CAROUSEL COLUMN-->
+            </div>
+            <!--EOF MAIN ROW-->
+          </div>
+          <!--EOF CONTAINER-->
+        </section>
+        <!--EOF SECTION-->
+        <!--SLIDESHOW-->
       </section>
       <!--EOF PROJECTS-->
       <!--OUR TEAM-->
@@ -249,7 +450,7 @@
       </section>
       <!--EOF OUR TEAM-->
       <!--CONTACT-->
-      <section class="container bg-warning" id="contacts">
+      <section class="container-fluid bg-black text-cream" id="contacts">
         <div class="container text-center py-3">
           <div class="row justify-content-center">
             <div class="col-md-8">
@@ -501,5 +702,20 @@
 
       });
     </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
