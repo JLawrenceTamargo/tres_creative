@@ -32,7 +32,7 @@ ul.navbar-nav li nav-item.active > a {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url(/image/toggler-icon.png);
+  background-image: url(image/toggler-icon.png);
   background-size: cover;
   background-blend-mode: darken;
 }
@@ -160,12 +160,10 @@ a.nav-link:hover {
   font-weight: 600;
 }
 
-#services .card .card-body
-{
-  background-color:#c98888af!important;
-  color:white;
+#services .card .card-body {
+  background-color: #c98888af !important;
+  color: white;
 }
-
 
 @media screen and (max-width: 420px) {
   .home-banner {
@@ -183,7 +181,7 @@ a.nav-link:hover {
     height: 100%;
   }
   .containerTeam .card {
-    height:500px;
+    height: 500px;
   }
 }
 
@@ -231,7 +229,6 @@ a.nav-link:hover {
   }
 }
 
-
 /*TEAM*/
 .containerTeam {
   display: flex;
@@ -243,7 +240,7 @@ a.nav-link:hover {
   width: 330px;
   height: 450px;
   padding: 40px 50px;
-  overflow:hidden;
+  overflow: hidden;
   margin: 45px;
   background: #f2f3f7;
   box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #f2f3f7;
@@ -282,8 +279,8 @@ a.nav-link:hover {
 .h5Team {
   color: #6c758f;
   padding: 6px;
-  font-size: 1.5rem!important;
-  font-weight: bold!important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
   text-align: center;
 }
 
