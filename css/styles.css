@@ -20,7 +20,7 @@ body {
   background-color: #3e0b0b;
 }
 
-ul.navbar-nav li.active > a {
+ul.navbar-nav li nav-item.active > a {
   color: #3e0b0b !important;
   background-color: #f9aeae;
   font-weight: bold;
@@ -160,6 +160,13 @@ a.nav-link:hover {
   font-weight: 600;
 }
 
+#services .card .card-body
+{
+  background-color:#c98888af!important;
+  color:white;
+}
+
+
 @media screen and (max-width: 420px) {
   .home-banner {
     height: 400px;
@@ -174,6 +181,9 @@ a.nav-link:hover {
     right: 0%;
     width: 65%;
     height: 100%;
+  }
+  .containerTeam .card {
+    height:500px;
   }
 }
 
@@ -219,4 +229,75 @@ a.nav-link:hover {
     width: 35%;
     height: 100%;
   }
+}
+
+
+/*TEAM*/
+.containerTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.containerTeam .card {
+  width: 330px;
+  height: 450px;
+  padding: 40px 50px;
+  overflow:hidden;
+  margin: 45px;
+  background: #f2f3f7;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #f2f3f7;
+  border-radius: 20px;
+}
+.containerTeam .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.containerTeam .card .content .imgBx {
+  width: 190px;
+  height: 300px;
+  margin-top: -60px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: -10px;
+  overflow: hidden;
+}
+.containerTeam .card .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.containerTeam .card .content .contentBx h4 {
+  color: #36187d;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.h5Team {
+  color: #6c758f;
+  padding: 6px;
+  font-size: 1.5rem!important;
+  font-weight: bold!important;
+  text-align: center;
+}
+
+.social-mediaTeam {
+  margin-top: 5px;
+  font-size: 25px;
+}
+.containerTeam .card .content .social-mediaTeam .a {
+  text-decoration: none;
+  color: #6c758f;
+  font-size: 30px;
+  margin: 10px;
+  transition: color 0.5s;
+}
+.containerTeam .card .content .social-mediaTeam a:hover {
+  color: red;
 }
